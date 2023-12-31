@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="nasr.css">
+    <title>Al Nasr Building Maintanance  catalogue</title>
+    <script src="nasr.js"></script>
+</head>
+<body>
+  <!--The logo-->
+    <div class="div1" > 
+        <img class="logo" src="Nasr (1).png" alt="Image">
+  </div>
+<!--The menu-->
+  <nav class="menu"> 
+    <ul>
+       <li>
+         
+            <img src="Vector (1).png" alt="image" id="openSidebar">
+                <div class="sidebar" id="sidebar">
+                    <img src="Vector (1).png" alt="image" id="closeSidebarIcon">
+                 <div >
+                        <img class="instagram" src="Vector (3).png" alt="facebook">
+                        <a href="#"> @Nasr205</a>  
+                  </div>
+
+                  <div >
+                      <img class="facebook" src="Vector (5).png" alt="facebook">
+                      <a href="#"> @Nasr205</a>
+                  </div>
+
+                  <div>
+                    <img  class="Whatsapp" src="Vector (4).png" alt="facebook">
+                      <a href="#"> @Nasr205</a>
+                  </div>
+
+                <div class="contact-section">
+                    <h2>Contact Now!!</h2>
+                    <form class="contact-form">
+                        
+                        <div class="form-group"> 
+                            <input type="text" placeholder="Your Name" class="form-control"> <!--A form so user can interact-->
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send</button>
+                    </form>
+                </div>
+                </div>
+
+           </li> 
+            
+       <li><a href="transformations.html"> Transformations </a></li> <!--menu html elements-->
+       <li><a href="catalogue.html"> Catalogue </a></li>
+       <li><a href="nasr.html"> Home</a></li>
+    </ul>
+</nav>
+
+<h class="about" > Catalogue</h>  
+<br><br><br><br><br>
+<div class="table_wrapper">
+<table border="1" padding="28">
+    <tr>
+      <td >
+        <div class="image-container">
+        <img src="R (3).jpg" alt="Image 1" class="image">
+        <div class="overlay">  <!--A table to display varieties of the catalogue designs-->
+            
+          <button onclick="showInstructions('Redigles-Mazon-Ceiling ريديجلز مازون سقف',  '100$','R (3).jpg')">Details</button>
+        </div>
+      </div>
+      </td>
+      <td >
+        <div class="image-container">
+        <img src="R (8).jpg" alt="Image 2" class="image">
+        <div class="overlay">
+          <button onclick="showInstructions('White gypsum folder-مجلد الجبس الأبيض','1034AED','R (8).jpg')">Details</button>
+        </div>
+       
+      </td>
+      <td >
+        <div class="image-container">
+        <img src="R (9).jpg" alt="Image 3" class="image">
+        <div class="overlay">
+          <button onclick="showInstructions('Big hall stone Justice-قاعة كبيرة حجر العدالة','2000AED-3410AED','R (9).jpg')">Details</button>
+        </div>
+      </div>
+      </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="image-container">
+            <img src="OIF (1).jpg" alt="Image 4" class="image">
+            <div class="overlay">
+              <button onclick="showInstructions('Parallel Stripped ceiling-سقف تجريدي مواز','1000AED','OIF (1).jpg')">Details</button>
+            </div>
+          </div>
+          </td>
+          <td >
+            <div class="image-container">
+            <img src="gypsum-false-ceiling.jpg" alt="Image 5" class="image">
+            <div class="overlay">
+              <button onclick="showInstructions('Double basket-سلة مزدوجة','1350','gypsum-false-ceiling.jpg')">Details</button>
+            </div>
+          </div>
+          </td>
+          <td>
+            <div class="image-container">
+            <img src="4f320c0eb1ca69b7f5a8ecd632b3d4bf.jpg" alt="Image 6 " class="image">
+            <div class="overlay">
+              <button onclick="showInstructions('Box formed Angle-زاوية تشكيل مربع','300$','4f320c0eb1ca69b7f5a8ecd632b3d4bf.jpg')">Details</button>
+            </div>
+          </div>
+          </td>
+    </tr>
+  </table>
+</div>
+<a href="nasr.html"><img id= "my-vector1"  src="Vector.png" alt="image" > </a>
+
+<div id="realPageContent">  
+  <p id="clickedData"></p>
+</div>
+
+<div id="instructionOverlay"class="instructionOverlay">
+  <div class="overlay-allignment">  <!--The html to open an overlay with the price range and the image selected by the user-->
+    <div class="ov-cont">
+      <button class="x" onclick="saveAndHide()">x</button>
+      <p id="priceRange">Placeholder price range</p>
+
+      <h3 id="instructionText">Placeholder text</h3>
+
+      <img id="instructionImage" src="" alt="Instruction Image" >
+      
+      <button onclick="showContactOverlay()" class="btn-cont" >Contact</button>
+    </div>
+  </div>
+</div>
+
+<div id="contactOverlay" class="instructionOverlay">
+  <div class="overlay-allignment"> <!---The contact over lay from which the user can easily contact the owner-->
+    <div class="ov-cont">
+      <button class="x" onclick="hideContactOverlay()">x</button>
+      <div >
+        <img class="instagram" src="Vector (3).png" alt="facebook">
+        <a href="#"> @Nasr205</a>  
+  </div>
+
+  <div >
+      <img class="facebook" src="Vector (5).png" alt="facebook">
+      <a href="#"> @Nasr205</a>
+  </div>
+
+  <div>
+    <img  class="Whatsapp" src="Vector (4).png" alt="facebook">
+      <a href="#"> @Nasr205</a>
+  </div>
+
+  <p> Phone Number: +971504904660 </p>
+  <p>                +971504305221</p> <!--contact information to contact the owner about the design-->
+
+<div class="contact-section">
+    <h2>Contact Now!!</h2>
+    <form class="contact-form">
+        <!-- Form inputs for message -->
+        <div class="form-group">
+            <input type="text" placeholder="Your Name" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="tel" placeholder="Phone Number" class="form-control">
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Your Message" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send</button>
+    </form>
+</div>
+
+    
+  </div>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
