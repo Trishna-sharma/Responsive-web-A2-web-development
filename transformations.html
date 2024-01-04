@@ -10,16 +10,15 @@
 <body>
   <!--The logo-->
     <div class="div1" > 
-        <img class="logo" src="Nasr (1).png" alt="Image">
+      <a href="nasr.html"><img class="logo" src="Nasr (1).png" alt="Image"></a>
   </div>
 <!--The menu-->
   <nav class="menu"> 
     <ul>
        <li>
-         
-            <img src="Vector (1).png" alt="image" id="openSidebar">
+            <img src="Vector (1).png" alt="image" id="openbar" class="openbar">
                 <div class="sidebar" id="sidebar">
-                    <img src="Vector (1).png" alt="image" id="closeSidebarIcon">
+                    <img class="lines" src="Vector (1).png" alt="image" id="closebar">
                  <div >
                         <img class="instagram" src="Vector (3).png" alt="facebook">
                         <a href="#"> @Nasr205</a>  
@@ -39,22 +38,20 @@
                     <h2>Contact Now!!</h2>
                     <form class="contact-form">
                         <!-- Form to take input messages from the user -->
-                        <div class="form-group">
+                        <div class="form-grp">
                             <input type="text" placeholder="Your Name" class="form-control">
                         </div>
-                        <div class="form-group">
+                        <div class="form-grp">
                             <input type="tel" placeholder="Phone Number" class="form-control">
                         </div>
-                        <div class="form-group">
+                        <div class="form-grp">
                             <textarea placeholder="Your Message" class="form-control"></textarea>
                         </div>
                         <button type="submit" class="btn-submit">Send</button>
                     </form>
                 </div>
                 </div>
-
            </li> 
-            
        <li><a href="transformations.html"> Transformations </a></li>
        <li><a href="catalogue.html"> Catalogue </a></li> <!-- The list elements in the menu -->
        <li><a href="nasr.html"> Home</a></li>
@@ -62,55 +59,51 @@
     </nav>
     
 
-      <div class="container"><!--The comparison images , designed -->
+   <div class="container"><!--The comparison images , designed -->
         <div class="images">
-          <img src="R (3).jpg" alt="Before" class="image" id="image1">
-          <img src="R (8).jpg" alt="After" class="image" id="image2">
-          
-        </div>  
+          <img src="R (3).jpg" alt="image1" class="image" id="image1">
+          <img src="R (8).jpg" alt="image2" class="image" id="image2">
+        </div> 
+
         <div class="buttons"> <!--comparison image's button-->
             <button onclick="dragImage1()">1</button>
             <button onclick="dragImage2()">2</button>
-          </div>
-        <div class="images1">
-            <img src="R (9).jpg" alt="Before" class="image" id="image3">
-            <img src="R (8).jpg" alt="After" class="image" id="image4">
-        
-          </div>
+        </div>
 
-          
-          <div class="buttons1">
+        <div class="images1">
+            <img src="R (9).jpg" alt="image1" class="image" id="image3">
+            <img src="R (8).jpg" alt="image2" class="image" id="image4">
+        </div>
+
+        <div class="buttons1">
             <button onclick="dragImage3()">1</button>
             <button onclick="dragImage4()">2</button>
-          </div>
-          <div class="images2">
-            <img src="OIF (1).jpg" alt="Before" class="image" id="image5">
-            <img src="d57ed748d645edf9db049c479d04c55c.jpg" alt="After" class="image" id="image6">
-        
-          </div>
+        </div>
 
-          <div class="buttons2">
+        <div class="images2">
+            <img src="OIF (1).jpg" alt="image1" class="image" id="image5">
+            <img src="d57ed748d645edf9db049c479d04c55c.jpg" alt="image2" class="image" id="image6">
+        </div>
+
+        <div class="buttons2">
             <button onclick="dragImage5()">1</button>
             <button onclick="dragImage6()">2</button>
-          </div>
-          <div class="images3">
-            <img src="4f320c0eb1ca69b7f5a8ecd632b3d4bf.jpg" alt="Before" class="image" id="image7">
-            <img src="R (3).jpg" alt="After" class="image" id="image8">
+        </div>
+
+        <div class="images3">
+            <img src="4f320c0eb1ca69b7f5a8ecd632b3d4bf.jpg" alt="image1" class="image" id="image7">
+            <img src="R (3).jpg" alt="image2" class="image" id="image8">
+        </div>
         
-          </div>
-          <div class="buttons3">
+        <div class="buttons3">
             <button onclick="dragImage7()">1</button>
             <button onclick="dragImage8()">2</button>
-          </div>
-          
-          
-         
+        </div>
       </div>
 
-  
+  <!--link to go back to the homepage-->
   <a href="nasr.html"><img id= "my-vector2"  src="Vector.png" alt="image" > </a>
-    </body>
-    </html>
+    
     
 </body>
 </html>
