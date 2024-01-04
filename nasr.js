@@ -1,14 +1,13 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('openSidebar').addEventListener('click', function() {
+    document.getElementById('openbar').addEventListener('click', function() {
         document.getElementById('sidebar').classList.toggle('active');
     });
 
-    document.getElementById('closeSidebarIcon').addEventListener('click', function() {
+    document.getElementById('closebar').addEventListener('click', function() {
         document.getElementById('sidebar').classList.remove('active');
     });  // to play the sidebar
 });
-
 
 let clickedData = ""; // Variable to store clicked data
 
@@ -39,6 +38,8 @@ function showContactOverlay() {
 function hideContactOverlay() {
   document.getElementById('contactOverlay').style.display = 'none';
 } //to play the instruction logic
+
+
 
 
 //play the dragging logic
@@ -76,13 +77,13 @@ document.addEventListener('mouseup', function() {
     const image8 = document.getElementById('image8');
   
     image1.style.width = ''; // Set back to default or initial width
-    image2.style.width = ''; // Set back to default or initial width
-    image3.style.width = ''; // Set back to default or initial width
-    image4.style.width = ''; // Set back to default or initial width
-    image5.style.width = ''; // Set back to default or initial width
-    image6.style.width = ''; // Set back to default or initial width
-    image7.style.width = ''; // Set back to default or initial width
-    image8.style.width = ''; // Set back to default or initial width
+    image2.style.width = ''; 
+    image3.style.width = ''; 
+    image4.style.width = ''; 
+    image5.style.width = ''; 
+    image6.style.width = ''; 
+    image7.style.width = ''; 
+    image8.style.width = ''; 
     
     isDragging = false;
   }
